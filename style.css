@@ -1,0 +1,110 @@
+body{
+    background-color: #264653;
+
+}
+
+section{
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    width: 50%;
+    background-color: white;
+    border-radius: 15px;
+    height: max-content;
+    padding: 2em;
+}
+
+.login h2{
+    text-align: center;
+    font-size: 35px;
+    font-family: Verdana, sans-serif;
+    color: #264653;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.login form input{
+    border-style: none;
+    border-bottom: 1px #1b323b solid;
+    width: 20em;
+    text-align: center;
+    padding: 0.5em 0em 0.5em 0em;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.btn{
+    background-color: #E9C46A ;
+    padding: 1em 1.5em 1em 1.5em;
+    border-style: none;
+    border-radius: 15px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 2em;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: #264653;
+    background-color: white;
+    border: 1px #E9C46A solid;
+}
+
+#recuperarContrasenia{
+    background-color: #E9C46A ;
+    padding: 1em 1.5em 1em 1.5em;
+    border-style: none;
+    border-radius: 15px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+#recuperarContrasenia:hover{
+    cursor: pointer;
+    color: #264653;
+    background-color: white;
+    border: 1px #E9C46A solid;
+}
+
+#divRegister{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+#emailRecuperar{
+    width: 30em;
+    text-align: center;
+}
+
+#newPassw{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 2em;
+
+}
+
+#newPassw input{
+    border-style: none;
+    border-bottom: 1px black solid;
+    width: 20em;
+    text-align: center;
+    padding: 0.5em 0em 0.5em 0em;
+}

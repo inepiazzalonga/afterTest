@@ -1,0 +1,70 @@
+body{
+    background-color: #264653;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#divTest{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    height: 600px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+#resultado{
+    background-color: #E9C46A ;
+    padding: 1em 1.5em 1em 1.5em;
+    border-style: none;
+    border-radius: 15px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 46%;
+    margin-bottom: 2em;
+
+}
+
+#resultado:hover{
+    cursor: pointer;
+    background-color: #264653;
+    border: 1px #E9C46A solid;
+}
+
+#divTest div{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    border-radius: 15px;
+    padding: 2em;
+    width: 50%;
+    color: #264653;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-snap-align: start;
+
+}
+
+.btnOption{
+    width: 60%;
+    padding: 1em 0em 1em 0em;
+    border-radius: 15px;
+    background-color: #E9C46A;
+    color: white;
+    border-style: none;
+    font-size: 18px;
+}
+
+.btnOption:hover{
+    cursor: pointer;
+    transform: scale(0.95);
+}
+

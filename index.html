@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div class="login">
+            <h2>INICIAR SESIÓN</h2>
+            <form id="formlogin">
+                <input type="text" name="user" id="user" placeholder="User">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <div class="btns">
+                    <button class="btn" id="login">Login</button>
+                    <button class="btn" id="register">Register</button>
+                </div>
+                <button id="recuperarContrasenia">Olvidé mi contraseña</button>
+            </form>
+            <div id="divRegister">
+                <form id="formRegister">
+                    <input type="email" name="email" id="inputEmail" placeholder="Mail">
+                    <input type="text" name="user" id="inputUser" placeholder="User">
+                    <input type="password" name="inputPassword" id="inputPassword" placeholder="Password">
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+            <div id="newPassw">
+                <input type="email" id="emailRecuperar" placeholder="Ingrese su mail"/>
+                <input type="password" id="passRecuperar" placeholder="Ingrese su nueva contraseña"/>
+                <input type="password" id="passConfirm" placeholder="Confirme su nueva contraseña"/>
+                <button id="cambiarPass">Cambiar contraseña</button>
+
+            </div>
+        </div>
+    </section>
+    
+    <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>
