@@ -8,6 +8,13 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#counter{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* padding: 2em; */
+    font-size: 18px;
+}
+
 #divTest{
     display: flex;
     flex-direction: column;

@@ -14,12 +14,16 @@ function showQuestions() {
         </div>
         `
         let btnOptions = document.getElementsByClassName("btnOption")
+       
         for (btn of btnOptions) {
             btn.onclick = (e) => {
                 let option = e.target
                 let answer = option.innerText
+                
                 let questionId = option.getAttribute("id")
+               
                 let currQuestion = preguntas.find(pregunta => pregunta.number === parseInt(questionId))
+                
                 answer === currQuestion.answer ? (respuestasCorrectas.push(answer) && Toastify({
                     text: "Correcta",
                     duration: 2000,
@@ -33,7 +37,6 @@ function showQuestions() {
                 }).showToast()) : Toastify({
                     text: "Incorrecta",
                     duration: 2000,
-
                     close: true,
                     gravity: "top",
                     position: "right",
@@ -54,7 +57,7 @@ showQuestions()
 
 function scroll() {
     divTest.style.scrollSnapType = "y mandatory",
-        divTest.style.scrollSnapAlign = "start"
+    divTest.style.scrollSnapAlign = "start"
     divTest.scrollBy(0, 500)
 }
 
@@ -64,7 +67,7 @@ function scroll() {
 const verResultado = document.getElementById("resultado")
 
 verResultado.onclick = () => {
-    let level
+    let level 
     if (respuestasCorrectas.length < 20) {
         level = "Elementary"
     } else if (respuestasCorrectas.length > 20 && respuestasCorrectas.length <= 29) {
@@ -86,7 +89,6 @@ verResultado.onclick = () => {
 }
 
 // PASAR PREGUNTA
-// setInterval(scroll, 10000)
 
 const counterTest = document.getElementById("counter")
 
@@ -94,7 +96,7 @@ function counter() {
     let counter = 10;
     const i = setInterval(() => {
         counterTest.innerText = (counter)
-        console.log(counter);
+        // console.log(counter);
         counter--;
         if (counter === -1) {
             clearInterval(i);
@@ -121,7 +123,7 @@ function counter() {
 
 counter()
 
-window.onmousemove = () => clearInterval()
+
 
 //LOGOUT
 const salir = document.getElementById("logout")

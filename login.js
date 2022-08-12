@@ -6,7 +6,7 @@ const login = document.getElementById("login")
 const registerUser = document.getElementById("register")
 const recuperarContraseña = document.getElementById("recuperarContraseña")
 
-let users = JSON.parse(localStorage.getItem("users")) ||[{
+let users = JSON.parse(localStorage.getItem("users")) || [{
     username: "ine22",
     password: "hola",
     email: "ine@ine.com"
@@ -31,6 +31,7 @@ function logIn() {
     } else if (usuarioIngresado.password !== password.value) {
         Swal.fire(
             'Contraseña incorrecta',
+            '',
             'error'
         )
     } else {
@@ -102,6 +103,7 @@ const cambiarPass = document.getElementById("cambiarPass")
 
 function showPassword() {
     let mailRegistrado = users.find(userF => userF.email === emailRecuperar.value)
+
     if (mailRegistrado !== undefined) {
         if (passRecuperar.value === passConfirm.value) {
             mailRegistrado.password = passRecuperar.value
@@ -130,5 +132,4 @@ recuperarContrasenia.onclick = (e) => {
 
 function setStorage(){
     localStorage.setItem("users", JSON.stringify(users))
-
 }
